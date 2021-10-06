@@ -3,12 +3,12 @@ using System.Collections;
 
 namespace Seasons_App
 {
-    class Seasons
+    class Seasons<T> : IEnumerable
     {
-        private string[] _items = new string[] { "Winter", "Spring", "Summer", "Autumn" };
+        private string[] _items = new string[] {"Winter", "Spring", "Summer", "Autumn"};
         public IEnumerator GetEnumerator()
         {
-            foreach (string item in _items)
+            foreach (var item in _items)
             {
                 if (item == "Summer")
                 {

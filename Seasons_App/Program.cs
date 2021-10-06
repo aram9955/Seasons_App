@@ -7,8 +7,9 @@ namespace Seasons_App
     {
         static void Main(string[] args)
         {
-            Seasons seasons = new Seasons();
-            foreach (string item in seasons)
+            Seasons<string> seasons = new Seasons<string>();
+
+            foreach (var item in seasons)
             {
                 Console.WriteLine(item);
             }
